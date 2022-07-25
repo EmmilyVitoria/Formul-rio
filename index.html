@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <Title> Formulário HTML </Title>
+    <meta charset="utf-8"/>
+</head>
+
+<body background="img/planodefundo.webp" text="darkPink">
+
+    <h2 align="center"> Formulário de Eventos/Pedidos </h2>
+
+    <fieldset>   
+        <legend align="center">Login</legend>
+        <form action="enviar.php" method="post" name="Login">
+
+   <label> E-mail: </label>
+    <input type="email" id="mail" name="mail" size="40" placeholder="Digite seu E-mail para login" required/>
+    <br/> <br/>
+
+    <label> Senha </label> </td>
+     <input type="password" id="senha" name="senha" size="40" placeholder="Digite sua senha" required/>
+     <br/> <br/>
+
+        </fieldset>   
+<br/> 
+
+ <fieldset>   
+    <legend align="center">Informações sobre você</legend>
+    <form action="enviar.php" method="post" name="Cadastro">
+
+<label> Nome do Cliente: </label>
+<input type="text" id="nome" name="nome" size="40" maxlength="50" placeholder="Digite seu Nome" required/>
+<br/> <br/>
+
+
+<label> Telefone: </label> </td>
+<input type="tel" id="telefone" name="telefone" size="40" placeholder="Digite seu telefone (XX) XXXXX-XXXX" required/>
+<br/> <br/>
+
+
+<label> E-mail: </label>
+<input type="email" id="mail" name="mail" size="40" maxlength="50" placeholder="Digite seu E-mail" required/>
+<br/> <br/>
+
+
+<label> Data do Evento: </label>
+<input type="date" id="data_evento" name="data_evento" size="40" maxlength="50" min="1950-01-01" max="2022-01-01" placeholder="Digite a Data que vai ocorrer o evento" required/>
+<br/> <br/>
+
+
+<label> Local do Evento: </label> </td>
+ <input type="text" id="local" name="local" size="40" placeholder="Digite o local do Evento" required/> </td>
+ <br/> <br/>
+
+
+<label> Estado do Evento: </label>
+<td> <select id="estado" name="estado" required> 
+    <option value="" selected="selected"> **Selecione** </option>
+    <optgroup label="Norte">
+    <option value="AC">Acre</option>
+    <option value="AM"> Amazonas </option>
+    <option value="RR"> Roraima </option>
+    <option value="AP">Amapá </option>
+    <option value="PA"> Pará </option>
+    <option value="RO"> Roraima</option>
+    <option value="TO"> Tocantins </option>
+
+
+    </optgroup>
+   <optgroup label="Nordeste">
+    <option value="MA"> Maranhão</option>
+    <option value="PI"> Piauí </option>
+    <option value="BA"> Bahia </option>
+    <option value="PE"> Pernambuco </option>
+    <option value="SE"> Sergipe </option>
+    <option value="AL"> Alagoas </option>
+    <option value="PB"> Paraiba </option>
+    <option value="RN"> Rio Grande do Norte </option>
+
+
+   </optgroup>
+   <optgroup label="Sudeste"> 
+    <option value="MG">Minas Gerais</option>
+    <option value="SP">São Paulo</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="AC">Espirito Santo</option>
+   </optgroup>
+   
+   <optgroup label="Sul">
+    <option value="PR"> Paraná </option>
+    <option value="SC"> Santa Catarina </option>
+    <option value="RS"> Rio Grande do Sul </option>
+
+   </optgroup>
+<optgroup label="Centro-Oeste">
+    <option value="MT"> Mato Grosso </option>
+    <option value="GO"> Goiás </option>
+    <option value="MS"> Mato Grosso do Sul </option>
+
+</optgroup>   
+   
+</select>
+<br/> <br/>
+
+<label> Tema do evento: </label>
+<input type="text" id="tema" name="tema" size="40" maxlength="50" placeholder="Digite o tema para seu evento" required/>
+<br/> <br/>
+
+<label> Observações adicionais: </label> 
+
+<textarea id="assunto" name="assunto" cols="40" rows="10" maxlength="Digite o assunto (Máximo 240 Caracteres)" required></textarea>
+
+<br/> <br/>
+
+<button type="submit" id="send" name="send">
+    <img src="img/icons.png" width="50" height="30" alt="send" />
+
+</fieldset>
+</body>
+</html>
